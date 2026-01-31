@@ -1,0 +1,283 @@
+.app-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(130, 87, 229, .35), transparent 60%),
+    radial-gradient(1200px 600px at 80% 20%, rgba(0, 190, 255, .18), transparent 60%),
+    radial-gradient(1200px 600px at 30% 90%, rgba(255, 140, 0, .10), transparent 60%),
+    #0b1020;
+}
+
+.glass-pill-soft {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.9rem;
+}
+
+.custom-container {
+  max-width: 1000px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.options-btn:hover,
+.options-btn:focus {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* กล่องใหญ่ */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(8px);
+}
+
+.glass-input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #7b6cf6, #9b6cff);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8a7cff, #a97cff);
+}
+
+/* ปุ่มไอคอน (+ / search) */
+.add-btn {
+  transition: all 0.15s ease;
+  margin-right: -8px;
+  z-index: 2;
+  width: 34px !important;
+  height: 34px !important;
+}
+
+.add-btn:hover {
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+.add-btn:active {
+  transform: scale(0.95);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.add-btn:focus {
+  box-shadow: none;
+}
+
+/* input: เหลี่ยมซ้าย โค้งขวา */
+.add-input {
+  z-index: 1;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-right-radius: 18px !important;
+  border-bottom-right-radius: 18px !important;
+  height: 38px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+/* width feel */
+.glass-card > .d-flex:first-child .add-input {
+  flex: 1 1 auto;
+  min-width: 420px;
+}
+
+.left-stack .search-input {
+  flex: 0 1 520px;
+  max-width: 560px;
+  min-width: 360px;
+}
+
+/* Divider */
+.glass-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Filter segmented */
+.filter-seg {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.filter-btn {
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88);
+  padding: 7px 14px;
+  font-size: 0.9rem;
+}
+
+.filter-btn + .filter-btn {
+  border-left: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.btn-check:checked + .filter-btn {
+  background: rgba(255, 255, 255, 0.92);
+  color: #0b1020;
+}
+
+.filter-btn:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Empty state */
+.empty-state {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* ===== Task cards ===== */
+.task-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.task-title {
+  font-size: 1.05rem;
+}
+
+.task-meta {
+  font-size: 0.88rem;
+  opacity: 0.9;
+}
+
+/* checkbox circle */
+.task-check {
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: transparent;
+  margin-top: 2px;
+}
+
+.task-check.done {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(255, 255, 255, 0.92);
+  color: #0b1020;
+}
+
+/* completed */
+.task-item.completed {
+  opacity: 0.55;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+}
+
+/* priority badges */
+.task-badge {
+  font-size: 0.78rem;
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.task-badge.low {
+  border-color: rgba(25, 135, 84, 0.55);
+  color: rgba(25, 135, 84, 1);
+}
+
+.task-badge.medium {
+  border-color: rgba(255, 193, 7, 0.55);
+  color: rgba(255, 193, 7, 1);
+}
+
+.task-badge.high {
+  border-color: rgba(220, 53, 69, 0.55);
+  color: rgba(220, 53, 69, 1);
+}
+
+/* actions */
+.task-action {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.85);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.task-action:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+
+.icon-plain{
+  width: 34px !important;
+  height: 34px !important;
+  border-radius: 999px;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+
+
+  margin-right: -8px;
+  color: rgba(255,255,255,0.70) !important;
+}
+
+.icon-plain:hover{
+  color: rgba(255,255,255,0.92) !important;
+  background: transparent !important;
+}
+
+.icon-plain:focus,
+.icon-plain:active{
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+
+.icon-plain:focus-visible{
+  outline: none !important;
+}
+
+
